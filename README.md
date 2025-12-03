@@ -1,6 +1,6 @@
 # AISprints Starter
 
-This repository is a starter template for AI sprint scores. It is designed for experienced human programmers who are well-versed in end-to-end software development to use AI effectively for developing and maintaining software applications.
+This repository is a starter template for aisprints. It is designed for experienced human programmers who are well-versed in end-to-end software development to use AI effectively for developing and maintaining software applications.
 
 ## Purpose
 
