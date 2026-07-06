@@ -1,3 +1,6 @@
+Date created: [Date]
+Date last modified: [Date]
+
 # [Feature Name] - Technical PRD
 
 ## Overview
@@ -13,11 +16,13 @@
 **Instructions**: List what the business needs from this feature. Use bullet points. Group related requirements under subheadings.
 
 **Structure**:
+
 - Use subheadings like "User Management", "Security Requirements", "Data Requirements"
 - Each requirement should be one clear sentence
 - Focus on "what" not "how"
 
 **Example**:
+
 ```
 ### User Management
 - Users can [action]
@@ -34,6 +39,7 @@
 ### Database Schema
 
 **Instructions**: Show all database tables needed. Include:
+
 - Table name
 - Column names and types
 - Primary keys and foreign keys
@@ -41,6 +47,7 @@
 - Use SQL CREATE TABLE statements
 
 **Example**:
+
 ```sql
 CREATE TABLE table_name (
   id TEXT PRIMARY KEY DEFAULT (lower(hex(randomblob(16)))),
@@ -52,6 +59,7 @@ CREATE TABLE table_name (
 ### API Endpoints
 
 **Instructions**: List all API routes needed. For each endpoint, include:
+
 - HTTP method (GET, POST, PUT, DELETE)
 - Route path
 - Request body structure (if any)
@@ -59,19 +67,22 @@ CREATE TABLE table_name (
 - Error codes and messages
 
 **Format**:
-```
+
+````
 #### POST /api/resource
 **Request Body:**
 ```json
 {
   "field": "value"
 }
-```
+````
 
 **Response:**
+
 - Success (200): Response object
 - Error (400): Validation error
 - Error (500): Server error
+
 ```
 
 ### User Interface Requirements
@@ -85,10 +96,13 @@ CREATE TABLE table_name (
 
 **Format**:
 ```
+
 #### Page Name (/route/path)
+
 - List of features
 - Form fields with validation
 - User actions available
+
 ```
 
 ---
@@ -103,19 +117,23 @@ CREATE TABLE table_name (
 
 **Format**:
 ```
+
 ### Phase 1: [Phase Name] - ⏳ PLANNED
 
 **Objective**: [What this phase achieves]
 
 **Tasks**:
+
 1. Task description
 2. Task description
 3. Task description
 
 **Deliverables**:
+
 - File or component created
 - Feature implemented
 - Testing completed
+
 ```
 
 **Status Markers**:
@@ -135,19 +153,24 @@ CREATE TABLE table_name (
 
 **Format**:
 ```
+
 ### Key Files
+
 - `path/to/file.ts` - Purpose description
 - `path/to/file.tsx` - Purpose description
 
 ### Implementation Patterns
+
 ```typescript
 // Code example showing pattern
 ```
 
 ### Important Notes
+
 - Critical gotchas or important details
 - Best practices followed
 - Known limitations
+
 ```
 
 ---
@@ -158,10 +181,12 @@ CREATE TABLE table_name (
 
 **Format**:
 ```
+
 - [ ] Users can [action]
 - [ ] System handles [scenario]
 - [ ] Error cases are handled
 - [ ] Performance meets requirements
+
 ```
 
 ---
@@ -176,11 +201,14 @@ CREATE TABLE table_name (
 
 **Format**:
 ```
+
 ### Common Issue Name
+
 **Problem**: [What goes wrong]
 **Cause**: [Why it happens]
 **Solution**: [How to fix it]
 **Code Reference**: `file.ts:line-number`
+
 ```
 
 ---
@@ -191,9 +219,11 @@ CREATE TABLE table_name (
 
 **Format**:
 ```
+
 - Feature idea 1
 - Feature idea 2
 - Feature idea 3
+
 ```
 
 ---
@@ -208,13 +238,17 @@ CREATE TABLE table_name (
 
 **Format**:
 ```
+
 ### External Dependencies
+
 - Service name - Purpose
 - API name - Purpose
 
 ### Internal Dependencies
+
 - Module name - Purpose
 - Service name - Purpose
+
 ```
 
 ---
@@ -225,13 +259,17 @@ CREATE TABLE table_name (
 
 **Format**:
 ```
+
 ### Technical Risks
+
 - **Risk**: [What could go wrong]
 - **Mitigation**: [How to prevent or handle it]
 
 ### User Experience Risks
+
 - **Risk**: [What could go wrong]
 - **Mitigation**: [How to prevent or handle it]
+
 ```
 
 ---
@@ -249,15 +287,18 @@ CREATE TABLE table_name (
 
 ---
 
-## Current Status
+## Changelog
 
 **Instructions**: Add a brief summary of current state. Update this section regularly.
 
 **Example**:
 ```
+
 **Last Updated**: [Date]
 **Current Phase**: Phase 2 - Backend Implementation
 **Status**: 🚧 IN PROGRESS
 **Next Steps**: Complete API endpoint testing
+
 ```
 
+```
