@@ -3,32 +3,47 @@ Date last modified: [Date]
 
 # [Feature Name] - Technical PRD
 
-## Overview
+## Overview/Problem
 
-**Instructions**: Write 2-3 sentences describing what this feature does and why it is needed. Keep it simple and clear.
+**Instructions**: Describe the specific problem this feature solves. Who experiences this problem? What happens today without this feature? Write 2-4 sentences of clear prose.
 
-**Example**: "This document outlines the requirements for implementing [feature name] in [application name]. The system will [main purpose] to support [business goal]."
+**Example**: "Teachers currently have no way to verify that their quiz questions align with state curriculum standards. They spend significant time manually cross-referencing TEKS documents, leading to inconsistent coverage and wasted preparation time."
 
 ---
 
-## Business Requirements
+## Hypothesis
 
-**Instructions**: List what the business needs from this feature. Use bullet points. Group related requirements under subheadings.
+**Instructions**: State your product bet in one sentence. Use the format: "We believe that [solution] will [outcome] for [user]."
 
-**Structure**:
+**Example**: "We believe that providing AI-powered question generation with TEKS alignment will reduce quiz creation time by half while improving standards coverage for teachers."
 
-- Use subheadings like "User Management", "Security Requirements", "Data Requirements"
-- Each requirement should be one clear sentence
-- Focus on "what" not "how"
+---
 
-**Example**:
+## Scope
 
-```
-### User Management
-- Users can [action]
-- Users must be able to [action]
-- System should [behavior]
-```
+**Instructions**: Explicitly define what is being built, what is not, and what was considered but deliberately cut. This removes ambiguity for both humans and AI agents.
+
+### In Scope
+
+What will be built in this feature:
+
+- [Requirement 1]
+- [Requirement 2]
+- [Requirement 3]
+
+### Out of Scope
+
+What is explicitly not being built now but may be considered later:
+
+- [Item 1]
+- [Item 2]
+
+### Cut
+
+Things that were considered during planning but deliberately removed (and why):
+
+- [Item 1] - [Reason for cutting]
+- [Item 2] - [Reason for cutting]
 
 ---
 
@@ -39,7 +54,6 @@ Date last modified: [Date]
 ### Database Schema
 
 **Instructions**: Show all database tables needed. Include:
-
 - Table name
 - Column names and types
 - Primary keys and foreign keys
@@ -47,7 +61,6 @@ Date last modified: [Date]
 - Use SQL CREATE TABLE statements
 
 **Example**:
-
 ```sql
 CREATE TABLE table_name (
   id TEXT PRIMARY KEY DEFAULT (lower(hex(randomblob(16)))),
@@ -59,7 +72,6 @@ CREATE TABLE table_name (
 ### API Endpoints
 
 **Instructions**: List all API routes needed. For each endpoint, include:
-
 - HTTP method (GET, POST, PUT, DELETE)
 - Route path
 - Request body structure (if any)
@@ -67,22 +79,19 @@ CREATE TABLE table_name (
 - Error codes and messages
 
 **Format**:
-
-````
+```
 #### POST /api/resource
 **Request Body:**
 ```json
 {
   "field": "value"
 }
-````
+```
 
 **Response:**
-
 - Success (200): Response object
 - Error (400): Validation error
 - Error (500): Server error
-
 ```
 
 ### User Interface Requirements
@@ -96,13 +105,10 @@ CREATE TABLE table_name (
 
 **Format**:
 ```
-
 #### Page Name (/route/path)
-
 - List of features
 - Form fields with validation
 - User actions available
-
 ```
 
 ---
@@ -112,34 +118,30 @@ CREATE TABLE table_name (
 **Instructions**: Break work into phases. Each phase should have:
 - Clear objective
 - List of tasks
-- Status marker (✅ COMPLETED, 🚧 IN PROGRESS, ⏳ PLANNED)
+- Status marker
 - Update status as work progresses
 
 **Format**:
 ```
-
-### Phase 1: [Phase Name] - ⏳ PLANNED
+### Phase 1: [Phase Name] - PLANNED
 
 **Objective**: [What this phase achieves]
 
 **Tasks**:
-
 1. Task description
 2. Task description
 3. Task description
 
 **Deliverables**:
-
 - File or component created
 - Feature implemented
 - Testing completed
-
 ```
 
 **Status Markers**:
-- ✅ COMPLETED - Phase is done
-- 🚧 IN PROGRESS - Currently working on this
-- ⏳ PLANNED - Not started yet
+- COMPLETED - Phase is done
+- IN PROGRESS - Currently working on this
+- PLANNED - Not started yet
 
 ---
 
@@ -153,77 +155,54 @@ CREATE TABLE table_name (
 
 **Format**:
 ```
-
 ### Key Files
-
 - `path/to/file.ts` - Purpose description
 - `path/to/file.tsx` - Purpose description
 
 ### Implementation Patterns
-
 ```typescript
 // Code example showing pattern
 ```
 
 ### Important Notes
-
 - Critical gotchas or important details
 - Best practices followed
 - Known limitations
-
 ```
 
 ---
 
-## Success Criteria
+## Acceptance Criteria
 
-**Instructions**: List how you will know the feature is complete. Use checkboxes that can be marked as done.
+**Instructions**: Define what must be true before this feature can ship. These are pass/fail conditions. Use checkboxes that can be marked as done during implementation.
 
 **Format**:
 ```
-
-- [ ] Users can [action]
-- [ ] System handles [scenario]
-- [ ] Error cases are handled
-- [ ] Performance meets requirements
-
+- [ ] Users can [action] and receive [expected result]
+- [ ] System handles [error scenario] by [expected behavior]
+- [ ] [Edge case] is handled correctly
+- [ ] Performance: [specific measurable requirement]
 ```
 
 ---
 
-## Troubleshooting Guide
+## Success Metrics
 
-**Instructions**: Document common problems and solutions. Include:
-- Problem description
-- Root cause
-- Solution steps
-- Code references if helpful
+**Instructions**: Define how you will know if this feature achieved its intended outcome after launch. These are measurable outcomes, not just "did we build it" checks.
 
 **Format**:
 ```
-
-### Common Issue Name
-
-**Problem**: [What goes wrong]
-**Cause**: [Why it happens]
-**Solution**: [How to fix it]
-**Code Reference**: `file.ts:line-number`
-
+| Metric | Target | How Measured |
+|--------|--------|--------------|
+| [Metric name] | [Target value] | [Measurement method] |
 ```
 
----
-
-## Future Enhancements
-
-**Instructions**: List features that are not in current scope but may be added later. Keep it brief.
-
-**Format**:
+**Example**:
 ```
-
-- Feature idea 1
-- Feature idea 2
-- Feature idea 3
-
+| Metric | Target | How Measured |
+|--------|--------|--------------|
+| Quiz creation time | < 5 minutes average | Timestamp difference between start and save |
+| TEKS alignment accuracy | > 90% teacher approval | Teacher feedback on generated questions |
 ```
 
 ---
@@ -238,17 +217,13 @@ CREATE TABLE table_name (
 
 **Format**:
 ```
-
 ### External Dependencies
-
 - Service name - Purpose
 - API name - Purpose
 
 ### Internal Dependencies
-
 - Module name - Purpose
 - Service name - Purpose
-
 ```
 
 ---
@@ -259,46 +234,58 @@ CREATE TABLE table_name (
 
 **Format**:
 ```
-
 ### Technical Risks
-
 - **Risk**: [What could go wrong]
 - **Mitigation**: [How to prevent or handle it]
 
 ### User Experience Risks
-
 - **Risk**: [What could go wrong]
 - **Mitigation**: [How to prevent or handle it]
+```
 
+---
+
+## Troubleshooting Guide
+
+**Instructions**: Document common problems and solutions as they arise during implementation. Include:
+- Problem description
+- Root cause
+- Solution steps
+- Code references if helpful
+
+**Format**:
+```
+### Common Issue Name
+**Problem**: [What goes wrong]
+**Cause**: [Why it happens]
+**Solution**: [How to fix it]
+**Code Reference**: `file.ts:line-number`
 ```
 
 ---
 
 ## Notes for AI Agents
 
-**Instructions for AI**: When updating this PRD:
-1. Update phase status markers as work progresses
-2. Add implementation details under "Technical Implementation Details" as code is written
-3. Mark success criteria as complete when features work
-4. Add troubleshooting entries when bugs are found and fixed
-5. Keep all sections current - remove outdated information
-6. Use code references format: `filepath:line-number` when citing code
-7. Update "Current Status" section at the top if needed
+**Instructions for AI**: When working with this PRD:
+1. Start by reading the Problem and Hypothesis to understand intent
+2. Use Scope (In/Out/Cut) to determine boundaries — do not build out-of-scope items
+3. Update phase status markers as work progresses
+4. Add implementation details under "Technical Implementation Details" as code is written
+5. Mark acceptance criteria as complete when features work
+6. Add troubleshooting entries when bugs are found and fixed
+7. Keep all sections current - remove outdated information
+8. Use code references format: `filepath:line-number` when citing code
 
 ---
 
-## Changelog
+## Current Status
 
 **Instructions**: Add a brief summary of current state. Update this section regularly.
 
 **Example**:
 ```
-
 **Last Updated**: [Date]
 **Current Phase**: Phase 2 - Backend Implementation
-**Status**: 🚧 IN PROGRESS
+**Status**: IN PROGRESS
 **Next Steps**: Complete API endpoint testing
-
-```
-
 ```
