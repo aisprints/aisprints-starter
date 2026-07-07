@@ -67,6 +67,17 @@ Cursor is the AI-powered code editor you will use for all sprint work. It looks 
 - [ ] Open Cursor to confirm it launches successfully
 - [ ] If prompted, sign in or create a Cursor account
 
+### Superwhisper (Recommended)
+
+Superwhisper is a voice-to-text tool that lets you talk to Cursor's AI agent instead of typing. It works offline and integrates directly with Cursor -- you press a shortcut, speak your intent, and polished text appears in the AI chat. This dramatically speeds up your workflow and makes it easier to give the AI agent detailed instructions.
+
+- [ ] Go to [https://superwhisper.com](https://superwhisper.com)
+- [ ] Download and install for your operating system (Mac, Windows, or iOS)
+- [ ] Open Superwhisper and follow the initial setup prompts
+- [ ] Set your activation shortcut (default is `Option + Space` on Mac)
+- [ ] Test it by pressing the shortcut and speaking a sentence
+- [ ] Try it inside Cursor: click into the AI chat input, press your Superwhisper shortcut, and speak a request
+
 ---
 
 ## Section 3: Create Your Repository from the Template
@@ -239,6 +250,7 @@ Before starting Sprint 1, confirm all of the following:
 - [ ] Node.js and npm installed
 - [ ] Git installed
 - [ ] Cursor IDE installed and opens successfully
+- [ ] Superwhisper installed and working with Cursor
 - [ ] Repository cloned and opened in Cursor
 - [ ] `npm install` completed without errors
 - [ ] `npm run dev` starts the app and you can see it at localhost:3000
